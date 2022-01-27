@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: linear-gradient(to left, #628e75, #1a4855);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-nav {
+  display: flex;
+  gap: 45px;
+}
