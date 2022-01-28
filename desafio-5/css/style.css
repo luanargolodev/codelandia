@@ -6,16 +6,14 @@
 
 body {
   background: linear-gradient(to left, #628e75, #1a4855);
-}
-
-.container {
-  margin: 0 auto;
-  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 ul {
@@ -25,4 +23,77 @@ ul {
 .header-nav {
   display: flex;
   gap: 45px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 165px;
+}
+
+h1,
+h2 {
+  color: #f9f9f9;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 900;
+  line-height: 74px;
+  font-size: 68px;
+  padding-bottom: 40px;
+  max-width: 445px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+  color: #f9f9f9;
+  max-width: 445px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  margin-top: 54px;
+  padding: 1rem 2rem;
+  border: 2px solid #628e75;
+  cursor: pointer;
+  text-align: center;
+  transform: skew(-30deg);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+button.assistir {
+  background-color: #658e76;
+}
+
+button.assistir::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 5px;
+  background: url("../imgs/decoracao.svg") no-repeat;
+}
+
+button.trailer {
+  margin-left: 30px;
+  background-color: transparent;
 }
