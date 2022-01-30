@@ -72,6 +72,7 @@ img {
   cursor: pointer;
   border-radius: 5px;
   color: #f9f9f9;
+  transform: skew(-20deg);
 }
 
 .main-conteudo button.assistir {
