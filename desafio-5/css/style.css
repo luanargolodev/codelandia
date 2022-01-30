@@ -5,95 +5,101 @@
 }
 
 body {
-  background: linear-gradient(to left, #628e75, #1a4855);
+  background: linear-gradient(to right, #628e75 0.66%, #1a4855 83.32%);
   font-family: "Poppins", sans-serif;
+  color: #f9f9f9;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-ul {
+li {
   list-style-type: none;
-}
-
-.header-nav {
-  display: flex;
-  gap: 45px;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 165px;
-}
-
-h1,
-h2 {
-  color: #f9f9f9;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-weight: 900;
-  line-height: 74px;
-  font-size: 68px;
-  padding-bottom: 40px;
-  max-width: 445px;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  padding-bottom: 20px;
-}
-
-p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 29px;
-  color: #f9f9f9;
-  max-width: 445px;
 }
 
 img {
   max-width: 100%;
 }
 
-button {
-  margin-top: 54px;
-  padding: 1rem 2rem;
-  border: 2px solid #628e75;
-  cursor: pointer;
-  text-align: center;
-  transform: skew(-30deg);
-  color: white;
+.header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.main {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.main-conteudo span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.main-conteudo h1 {
+  margin-top: 14px;
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 74px;
+  width: 400px;
+}
+
+.main-conteudo p {
   font-size: 16px;
-  font-weight: 500;
-  position: relative;
+  line-height: 29px;
+  margin-top: 25px;
+  width: 445px;
 }
 
-button.assistir {
-  background-color: #658e76;
+.main-conteudo button {
+  margin-top: 40px;
+  padding: 8px 40px 8px 40px;
+  background: transparent;
+  border: 2px solid #658e76;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #f9f9f9;
 }
 
-button.assistir::before {
+.main-conteudo button.assistir {
+  background: #658e76;
+}
+
+/* .main-conteudo button.assistir::before {
   content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 5px;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  position: relative;
   background: url("../imgs/decoracao.svg") no-repeat;
+  left: -15px;
+} */
+
+@keyframes imagem {
+  from {
+    top: 0;
+  }
+  to {
+    top: -60px;
+  }
 }
 
-button.trailer {
-  margin-left: 30px;
-  background-color: transparent;
+.main-imagem img {
+  display: block;
+  position: relative;
+  margin-top: -50px;
+  animation: imagem 2s infinite ease alternate;
 }
