@@ -8,6 +8,7 @@ body {
   background-image: url("../imgs/fundo.png");
   background-size: cover;
   font-family: "B612", sans-serif;
+  color: #ffffff;
 }
 
 .header {
@@ -23,4 +24,54 @@ body {
 .header h1 {
   padding-top: 35px;
   font-size: 96px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 160px;
+  gap: 70px;
+}
+
+.main-conteudo-info {
+  margin-top: 40px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.main-conteudo-info span::before {
+  content: "";
+  background: url("../imgs/clock.svg");
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+
+button {
+  border-radius: 3px;
+  padding: 15px 27px 15px 27px;
+  margin-top: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+button.assistir {
+  background-color: #0072d2;
+}
+
+button.trailer {
+  background-color: #131318;
+  margin-left: 50px;
+  border: 1px solid #ffffff;
 }
