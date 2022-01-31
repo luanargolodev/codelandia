@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../imgs/fundo.png");
+  background-size: cover;
+  font-family: "B612", sans-serif;
+}
+
+.header {
+  color: #ffffff;
+  text-align: center;
+}
+
+.header p {
+  padding-top: 45px;
+  font-size: 20px;
+}
+
+.header h1 {
+  padding-top: 35px;
+  font-size: 96px;
+}
