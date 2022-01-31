@@ -9,6 +9,7 @@ body {
   background-size: cover;
   font-family: "B612", sans-serif;
   color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -74,4 +75,56 @@ button.trailer {
   background-color: #131318;
   margin-left: 50px;
   border: 1px solid #ffffff;
+}
+
+.main-conteudo-botao {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    padding-top: 0;
+    justify-content: space-between;
+    padding-top: 0px;
+    gap: 0;
+  }
+  .main-imagem {
+    align-self: center;
+  }
+  .header h1 {
+    padding-top: 15px;
+    font-size: 48px;
+  }
+  .header p {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .main-conteudo-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main-conteudo p {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+  .main-conteudo-info span::before {
+    display: none;
+  }
+  .main-conteudo-botao {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  button {
+    padding: 15px;
+    margin-top: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
