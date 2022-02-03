@@ -3,3 +3,52 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  height: 250px;
+  background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.header-menu h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.header-input input {
+  margin-top: 30px;
+  height: 65px;
+  width: 100%;
+  border-radius: 5px;
+  border: transparent;
+  background: rgba(255, 255, 255, 0.2);
+  flex-wrap: wrap;
+}
+
+.header-input input[type="text"] {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  padding-left: 65px;
+}
+
+::placeholder {
+  color: #ffffff;
+}
