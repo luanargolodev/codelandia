@@ -6,6 +6,7 @@
 
 body {
   font-family: "Lexend Deca", sans-serif;
+  background: #f3f5f7;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
 .header {
   height: 250px;
   background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+  margin-bottom: 50px;
 }
 
 .header-menu {
@@ -51,4 +53,36 @@ body {
 
 ::placeholder {
   color: #ffffff;
+}
+
+:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.main-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.main-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-card-content h1 {
+  font-size: 26px;
+  color: #313131;
+  padding-top: 20px;
+}
+
+.main-card-content p {
+  font-size: 18px;
+  color: #b6b6b6;
+  line-height: 32px;
+  padding-top: 8px;
+  width: 100%;
 }
