@@ -86,3 +86,16 @@ body {
   padding-top: 8px;
   width: 100%;
 }
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form i {
+  color: #fff;
+  font-size: 25px;
+  left: 45px;
+  top: 45px;
+  position: relative;
+}
