@@ -38,9 +38,7 @@ const App = () => {
             <a href="/">Mais sobre nós</a>
           </div>
         </div>
-        <div>
-          <img src={House} alt="Casa bonita" />
-        </div>
+        <img src={House} alt="Casa bonita" />
       </Section>
 
       <Content>
@@ -57,7 +55,7 @@ const App = () => {
         </div>
       </Content>
 
-      <Gallery>
+      <Gallery id="galeria">
         <h3>Galeria</h3>
         <p>
           Se você está entediado com a aparência da decoração de interiores da
@@ -70,7 +68,7 @@ const App = () => {
         </div>
       </Gallery>
 
-      <Budget>
+      <Budget id="contato">
         <h3>Orçamento</h3>
         <p>Interessado em entrar em contato com um de nossos profissionais?</p>
         <Button>Entre em contato</Button>

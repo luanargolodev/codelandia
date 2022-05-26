@@ -22,10 +22,10 @@ const Header = () => {
           <a href="#inicio">Início</a>
         </li>
         <li>
-          <a href="/">Galeria</a>
+          <a href="#galeria">Galeria</a>
         </li>
         <li>
-          <a href="/">Contato</a>
+          <a href="#contato">Contato</a>
         </li>
         <li>
           <a href="/">

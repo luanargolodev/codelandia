@@ -29,8 +29,19 @@ export const Container = styled.div`
 export const Section = styled.section`
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background: #f9f9f9;
   margin-bottom: 2rem;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
 
   div {
     max-width: 1200px;
@@ -70,14 +81,6 @@ export const Section = styled.section`
       }
     }
 
-    img {
-      max-width: 100%;
-
-      @media (max-width: 700px) {
-        display: none;
-      }
-    }
-
     a {
       font-size: 1.125rem;
       font-weight: 500;
@@ -113,11 +116,22 @@ export const Button = styled.button`
     background: ${(props) => (props.primary ? '#ff5a5f' : '')};
   }
 
+  ${(props) =>
+    !props.primary &&
+    `
+      margin: 0 auto;
+    `}
+
   @media (max-width: 700px) {
     font-size: 12px;
-    margin-left: -20px;
-    margin-right: 1rem;
     margin-bottom: 1.5rem;
+    margin-left: -1.5rem;
+
+    ${(props) =>
+      !props.primary &&
+      `
+      margin: 0 auto;
+    `}
   }
 `;
 
