@@ -1,9 +1,20 @@
 import React from 'react';
-import { Container, GlobalStyle, Section, Button, Content } from './styles';
+import {
+  Container,
+  GlobalStyle,
+  Section,
+  Button,
+  Content,
+  Gallery,
+  Budget,
+} from './styles';
 
 import Header from './components/Header';
 import House from './assets/house.png';
 import House2 from './assets/house2.png';
+import House3 from './assets/house3.png';
+import House4 from './assets/house4.png';
+import House5 from './assets/house5.png';
 
 const App = () => {
   return (
@@ -45,6 +56,25 @@ const App = () => {
           </p>
         </div>
       </Content>
+
+      <Gallery>
+        <h3>Galeria</h3>
+        <p>
+          Se você está entediado com a aparência da decoração de interiores da
+          casa comuns, trabalhamos com designs diferentes e inovadores.
+        </p>
+        <div>
+          <img src={House3} alt="Casa bonita" />
+          <img src={House4} alt="Casa bonita" />
+          <img src={House5} alt="Casa bonita" />
+        </div>
+      </Gallery>
+
+      <Budget>
+        <h3>Orçamento</h3>
+        <p>Interessado em entrar em contato com um de nossos profissionais?</p>
+        <Button>Entre em contato</Button>
+      </Budget>
     </>
   );
 };
