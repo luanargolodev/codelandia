@@ -5,8 +5,6 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 30px 0;
   flex-wrap: wrap;
 
@@ -55,7 +53,6 @@ export const Container = styled.header`
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 1.5rem;
 
     div {
       h1 {
