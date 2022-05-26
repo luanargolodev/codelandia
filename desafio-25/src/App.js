@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, GlobalStyle, Section, Button } from './styles';
+import { Container, GlobalStyle, Section, Button, Content } from './styles';
 
 import Header from './components/Header';
 import House from './assets/house.png';
+import House2 from './assets/house2.png';
 
 const App = () => {
   return (
@@ -30,6 +31,20 @@ const App = () => {
           <img src={House} alt="Casa bonita" />
         </div>
       </Section>
+
+      <Content>
+        <div>
+          <img src={House2} alt="Casa bonita" />
+        </div>
+        <div>
+          <h2>Design Minimalista</h2>
+          <p>
+            Móveis apenas essenciais e com design moderno, além de revestimentos
+            bonitos e em cores neutras para manter a casa sempre com um estilo
+            clean e suave.
+          </p>
+        </div>
+      </Content>
     </>
   );
 };

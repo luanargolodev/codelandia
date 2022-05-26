@@ -84,3 +84,44 @@ export const Button = styled.button`
     background: ${(props) => (props.primary ? '#ff5a5f' : '#272727')};
   }
 `;
+
+export const Content = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    padding: 0;
+    margin-left: 1.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2.5rem;
+    padding: 1rem;
+    color: #fff;
+
+    &:last-child {
+      background: #272727;
+      width: 585px;
+      height: 182px;
+
+      h2 {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1.175rem;
+        margin-bottom: 1.125rem;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 25px;
+      }
+    }
+  }
+`;
